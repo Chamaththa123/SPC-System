@@ -1,0 +1,6 @@
+@SPC_HostAddress = http://localhost:5119
+
+GET {{SPC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
