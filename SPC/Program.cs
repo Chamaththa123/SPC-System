@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using SPC.DataAccess;
 using SPC.Services;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +12,31 @@ builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
 builder.Services.AddControllers();
 builder.Services.AddScoped<FacilityDAL>();
 builder.Services.AddScoped<FacilityService>();
+builder.Services.AddScoped<UserDAL>();
+builder.Services.AddScoped<UserService>();
 
+// Configure JWT Authentication
+var key = Encoding.ASCII.GetBytes("SuperStrongJWTSecretKeyMustBe32Chars!");
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
+
+// Enable authentication & authorization
+builder.Services.AddAuthorization();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -26,7 +53,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseRouting();
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

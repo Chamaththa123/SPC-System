@@ -105,3 +105,12 @@ E:\Freelancing\SPC\backend\SPC-System\SPC\obj\Debug\net8.0\refint\SPC.dll
 E:\Freelancing\SPC\backend\SPC-System\SPC\obj\Debug\net8.0\SPC.pdb
 E:\Freelancing\SPC\backend\SPC-System\SPC\obj\Debug\net8.0\SPC.genruntimeconfig.cache
 E:\Freelancing\SPC\backend\SPC-System\SPC\obj\Debug\net8.0\ref\SPC.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Freelancing\SPC\backend\SPC-System\SPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
