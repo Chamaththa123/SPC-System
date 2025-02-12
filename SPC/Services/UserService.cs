@@ -29,7 +29,7 @@ namespace SPC.Services
             if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.Password))
                 return null; // Invalid credentials
 
-            if (user.Status != 1)
+            if (user.Status == 0)
                 return "User not active";
 
             return JwtHelper.GenerateToken(user); // Generate JWT
@@ -52,5 +52,20 @@ namespace SPC.Services
                 Status = user.Status
             };
         }
+
+
+        public async Task<bool> ActivateUser(int userId)
+        {
+            var user = await _userDAL.GetUserById(userId);
+
+            if (user == null)
+                return false;
+
+            if (user.Status == 1)
+                return false;
+
+            return await _userDAL.UpdateUserStatus(userId, 1);
+        }
+
     }
 }

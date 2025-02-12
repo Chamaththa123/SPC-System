@@ -27,8 +27,28 @@ namespace SPC.Controllers
         public async Task<IActionResult> Login(LoginRequest request)
         {
             var token = await _userService.Login(request);
+
+            if (token == null)
+                return Unauthorized("Invalid credentials");
+
+            if (token == "User not active")
+                return Unauthorized(new { message = "Your account is not active. Please contact support." });
+
             var user = await _userService.GetUserDetailsByEmail(request.Email);
-            return token == null ? Unauthorized("Invalid credentials") : Ok(new { Token = token,User =user });
+            return Ok(new { Token = token, User = user });
         }
+
+
+        [HttpPut("activate-user")]
+        public async Task<IActionResult> ActivateUser([FromQuery] int userId)
+        {
+            var result = await _userService.ActivateUser(userId);
+
+            if (!result)
+                return BadRequest(new { message = "User not found or already activated" });
+
+            return Ok(new { message = "User account activated successfully" });
+        }
+
     }
 }

@@ -65,5 +65,56 @@ namespace SPC.DataAccess
                 }
             }
         }
+
+        public async Task<User> GetUserById(int userId)
+        {
+            using (var conn = new MySqlConnection(_connectionString))
+            {
+                await conn.OpenAsync();
+                string query = "SELECT * FROM user WHERE idUser = @userId";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", userId);
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        if (await reader.ReadAsync())
+                        {
+                            return new User
+                            {
+                                IdUser = reader.GetInt32("idUser"),
+                                Name = reader.GetString("name"),
+                                Email = reader.GetString("email"),
+                                Password = reader.GetString("password"),
+                                Contact = reader.GetString("contact"),
+                                Role = reader.GetInt32("role"),
+                                Status = reader.GetInt32("status")
+                            };
+                        }
+                        return null;
+                    }
+                }
+            }
+        }
+
+        public async Task<bool> UpdateUserStatus(int userId, int status)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                string query = "UPDATE user SET status = @Status WHERE idUser = @UserId";
+
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    cmd.Parameters.AddWithValue("@Status", status);
+
+                    int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                    return rowsAffected > 0;
+                }
+            }
+        }
+
+
     }
 }

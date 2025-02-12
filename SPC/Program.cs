@@ -14,6 +14,8 @@ builder.Services.AddScoped<FacilityDAL>();
 builder.Services.AddScoped<FacilityService>();
 builder.Services.AddScoped<UserDAL>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<DrugDAL>();
+builder.Services.AddScoped<DrugService>();
 
 // Configure JWT Authentication
 var key = Encoding.ASCII.GetBytes("SuperStrongJWTSecretKeyMustBe32Chars!");
