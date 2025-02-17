@@ -39,8 +39,8 @@ namespace SPC.Controllers
         }
 
 
-        [HttpPut("activate-user")]
-        public async Task<IActionResult> ActivateUser([FromQuery] int userId)
+        [HttpPut("activate-user/{userId}")]
+        public async Task<IActionResult> ActivateUser(int userId)
         {
             var result = await _userService.ActivateUser(userId);
 
@@ -48,6 +48,13 @@ namespace SPC.Controllers
                 return BadRequest(new { message = "User not found or already activated" });
 
             return Ok(new { message = "User account activated successfully" });
+        }
+
+        [HttpGet("get-all-users")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await _userService.GetAllUsers();
+            return Ok(users);
         }
 
     }

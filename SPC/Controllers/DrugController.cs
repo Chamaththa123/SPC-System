@@ -38,5 +38,13 @@ namespace SPC.Controllers
         {
             return await _drugService.UpdateDrug(drug) ? Ok("Drug updated") : BadRequest("Update failed");
         }
+
+        [HttpPut("update-stockin/{id}")]
+        public async Task<IActionResult> UpdateStockIn(int id, [FromBody] int newStockIn)
+        {
+            var result = await _drugService.UpdateStockIn(id, newStockIn);
+            return result ? Ok("Stock updated successfully") : BadRequest("Failed to update stock");
+        }
+
     }
 }

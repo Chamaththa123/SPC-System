@@ -9,5 +9,6 @@
         public string Contact { get; set; }
         public int Role { get; set; }
         public int Status { get; set; }
+        public int BranchId { get; set; }
     }
 }

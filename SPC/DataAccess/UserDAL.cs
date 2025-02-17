@@ -19,7 +19,7 @@ namespace SPC.DataAccess
             using (var conn = new MySqlConnection(_connectionString))
             {
                 await conn.OpenAsync();
-                string query = "INSERT INTO user (name, email, password, contact, role, status) VALUES (@name, @email, @password, @contact, @role, @status)";
+                string query = "INSERT INTO user (name, email, password, contact, role, status,branchId) VALUES (@name, @email, @password, @contact, @role, @status,@branchId)";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -29,6 +29,7 @@ namespace SPC.DataAccess
                     cmd.Parameters.AddWithValue("@contact", user.Contact);
                     cmd.Parameters.AddWithValue("@role", user.Role);
                     cmd.Parameters.AddWithValue("@status", user.Status);
+                    cmd.Parameters.AddWithValue("@branchId", user.BranchId);
 
                     return await cmd.ExecuteNonQueryAsync();
                 }
@@ -57,7 +58,8 @@ namespace SPC.DataAccess
                                 Password = reader.GetString("password"),
                                 Contact = reader.GetString("contact"),
                                 Role = reader.GetInt32("role"),
-                                Status = reader.GetInt32("status")
+                                Status = reader.GetInt32("status"),
+                                BranchId = reader.GetInt32("branchId")
                             };
                         }
                         return null;
@@ -88,7 +90,8 @@ namespace SPC.DataAccess
                                 Password = reader.GetString("password"),
                                 Contact = reader.GetString("contact"),
                                 Role = reader.GetInt32("role"),
-                                Status = reader.GetInt32("status")
+                                Status = reader.GetInt32("status"),
+                                BranchId = reader.GetInt32("branchId"),
                             };
                         }
                         return null;
@@ -115,6 +118,37 @@ namespace SPC.DataAccess
             }
         }
 
+
+        public async Task<List<User>> GetAllUsers()
+        {
+            using (var conn = new MySqlConnection(_connectionString))
+            {
+                await conn.OpenAsync();
+                string query = "SELECT * FROM user";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        List<User> users = new List<User>();
+                        while (await reader.ReadAsync())
+                        {
+                            users.Add(new User
+                            {
+                                IdUser = reader.GetInt32("idUser"),
+                                Name = reader.GetString("name"),
+                                Email = reader.GetString("email"),
+                                Contact = reader.GetString("contact"),
+                                Role = reader.GetInt32("role"),
+                                Status = reader.GetInt32("status"),
+                                BranchId = reader.GetInt32("branchId")
+                            });
+                        }
+                        return users;
+                    }
+                }
+            }
+        }
 
     }
 }

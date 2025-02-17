@@ -19,5 +19,8 @@ namespace SPC.Services
         public async Task<Drug> GetDrugById(int id) => await _drugDAL.GetDrugById(id);
 
         public async Task<bool> UpdateDrug(Drug drug) => await _drugDAL.UpdateDrug(drug);
+
+        public async Task<bool> UpdateStockIn(int id, int newStockIn) => await _drugDAL.UpdateStockIn(id, newStockIn);
+
     }
 }

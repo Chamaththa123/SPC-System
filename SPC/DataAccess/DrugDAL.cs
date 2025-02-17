@@ -19,7 +19,7 @@ namespace SPC.DataAccess
             using (var conn = new MySqlConnection(_connectionString))
             {
                 await conn.OpenAsync();
-                string query = "INSERT INTO drug (code, name, description, expiry_date, status) VALUES (@code, @name, @description, @expiry_date, @status)";
+                string query = "INSERT INTO drug (code, name, description,stockIn, expiry_date, status) VALUES (@code, @name, @description,@stockIn, @expiry_date, @status)";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -28,6 +28,7 @@ namespace SPC.DataAccess
                     cmd.Parameters.AddWithValue("@description", drug.Description);
                     cmd.Parameters.AddWithValue("@expiry_date", drug.ExpiryDate);
                     cmd.Parameters.AddWithValue("@status", drug.Status);
+                    cmd.Parameters.AddWithValue("@stockIn", drug.StockIn);
 
                     return await cmd.ExecuteNonQueryAsync();
                 }
@@ -56,6 +57,7 @@ namespace SPC.DataAccess
                             Name = reader.GetString("name"),
                             Description = reader.IsDBNull("description") ? "" : reader.GetString("description"),
                             ExpiryDate = reader.GetString("expiry_date"),
+                            StockIn = reader.GetInt32("stockIn"),
                             Status = reader.GetInt32("status")
                         });
                     }
@@ -86,7 +88,8 @@ namespace SPC.DataAccess
                                 Name = reader.GetString("name"),
                                 Description = reader.IsDBNull("description") ? "" : reader.GetString("description"),
                                 ExpiryDate = reader.GetString("expiry_date"),
-                                Status = reader.GetInt32("status")
+                                Status = reader.GetInt32("status"),
+                                StockIn = reader.GetInt32("stockIn")
                             };
                         }
                     }
@@ -116,5 +119,24 @@ namespace SPC.DataAccess
                 }
             }
         }
+
+        // Update StockIn for a Drug
+        public async Task<bool> UpdateStockIn(int id, int newStockIn)
+        {
+            using (var conn = new MySqlConnection(_connectionString))
+            {
+                await conn.OpenAsync();
+                string query = "UPDATE drug SET stockIn = @stockIn WHERE idDrug = @id";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@stockIn", newStockIn);
+
+                    return await cmd.ExecuteNonQueryAsync() > 0;
+                }
+            }
+        }
+
     }
 }

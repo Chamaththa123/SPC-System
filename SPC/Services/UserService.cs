@@ -49,10 +49,15 @@ namespace SPC.Services
                 Email = user.Email,
                 Contact = user.Contact,
                 Role = user.Role,
-                Status = user.Status
+                Status = user.Status,
+                BranchId = user.BranchId,
             };
         }
 
+        public async Task<List<User>> GetAllUsers()
+        {
+            return await _userDAL.GetAllUsers();
+        }
 
         public async Task<bool> ActivateUser(int userId)
         {

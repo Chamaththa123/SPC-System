@@ -10,12 +10,29 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
                      .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
+
 builder.Services.AddScoped<FacilityDAL>();
 builder.Services.AddScoped<FacilityService>();
 builder.Services.AddScoped<UserDAL>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<DrugDAL>();
 builder.Services.AddScoped<DrugService>();
+builder.Services.AddScoped<TenderDAL>();
+builder.Services.AddScoped<TenderService>();
+builder.Services.AddScoped<TenderSubmissionDAL>();
+builder.Services.AddScoped<TenderSubmissionService>();
+builder.Services.AddScoped<StockDAL>();
+builder.Services.AddScoped<StockService>();
+builder.Services.AddScoped<SupplierOrderDAL>();
+builder.Services.AddScoped<SupplierOrderService>();
 
 // Configure JWT Authentication
 var key = Encoding.ASCII.GetBytes("SuperStrongJWTSecretKeyMustBe32Chars!");
@@ -55,6 +72,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseRouting();
 app.UseHttpsRedirection();
+app.UseCors("AllowAllOrigins");
 app.UseAuthentication();
 app.UseAuthorization();
 
