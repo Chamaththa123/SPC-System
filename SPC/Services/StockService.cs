@@ -21,5 +21,15 @@ namespace SPC.Services
         {
             return await _stockDAL.GetStockByBranch(branchId);
         }
+
+        public async Task<Stock> GetStockById(int stockId)
+        {
+            return await _stockDAL.GetStockById(stockId);
+        }
+
+        public async Task<int> UpdateStockInStock(int stockId, int inStock)
+        {
+            return await _stockDAL.UpdateStockInStock(stockId, inStock);
+        }
     }
 }

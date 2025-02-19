@@ -33,6 +33,8 @@ builder.Services.AddScoped<StockDAL>();
 builder.Services.AddScoped<StockService>();
 builder.Services.AddScoped<SupplierOrderDAL>();
 builder.Services.AddScoped<SupplierOrderService>();
+builder.Services.AddScoped<PharmacyOrderDAL>();
+builder.Services.AddScoped<PharmacyOrderService>();
 
 // Configure JWT Authentication
 var key = Encoding.ASCII.GetBytes("SuperStrongJWTSecretKeyMustBe32Chars!");
