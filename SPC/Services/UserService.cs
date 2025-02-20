@@ -72,5 +72,10 @@ namespace SPC.Services
             return await _userDAL.UpdateUserStatus(userId, 1);
         }
 
+        public async Task<User> GetUserById(int userId)
+        {
+            return await _userDAL.GetUserDetailsById(userId);
+        }
+
     }
 }

@@ -57,5 +57,14 @@ namespace SPC.Controllers
             return Ok(users);
         }
 
+        [HttpGet("get-user-by-id/{userId}")]
+        public async Task<IActionResult> GetUserById(int userId)
+        {
+            var user = await _userService.GetUserById(userId);
+            if (user == null)
+                return NotFound(new { message = "User not found" });
+
+            return Ok(user);
+        }
     }
 }

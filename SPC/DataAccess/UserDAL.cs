@@ -150,5 +150,35 @@ namespace SPC.DataAccess
             }
         }
 
+        public async Task<User> GetUserDetailsById(int userId)
+        {
+            using (var conn = new MySqlConnection(_connectionString))
+            {
+                await conn.OpenAsync();
+                string query = "SELECT * FROM user WHERE idUser = @userId";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", userId);
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        if (await reader.ReadAsync())
+                        {
+                            return new User
+                            {
+                                IdUser = reader.GetInt32("idUser"),
+                                Name = reader.GetString("name"),
+                                Email = reader.GetString("email"),
+                                Contact = reader.GetString("contact"),
+                                Role = reader.GetInt32("role"),
+                                Status = reader.GetInt32("status"),
+                                BranchId = reader.GetInt32("branchId")
+                            };
+                        }
+                        return null;
+                    }
+                }
+            }
+        }
     }
 }

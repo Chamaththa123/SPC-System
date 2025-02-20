@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "E:\\Freelancing\\SPC\\backend\\SPC-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\controllers\\pharmacyordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\controllers\\pharmacyordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\dataaccess\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\dataaccess\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\dataaccess\\stockdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\dataaccess\\stockdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\dataaccess\\supplierorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\dataaccess\\supplierorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\services\\pharmacyorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\services\\pharmacyorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\dataaccess\\pharmacyorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\dataaccess\\pharmacyorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\models\\pharmacyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\models\\pharmacyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\services\\supplierorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\services\\supplierorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\models\\supplierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\models\\supplierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|e:\\freelancing\\spc\\backend\\spc-system\\spc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68151B7-5CE8-4F2B-A8AC-F9B611C03631}|SPC\\SPC.csproj|solutionrelative:spc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,145 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Program.cs",
-              "RelativeDocumentMoniker": "SPC\\Program.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Program.cs*",
-              "RelativeToolTip": "SPC\\Program.cs*",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAAzAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SPC\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SPC\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAmwEMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T03:38:36.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StockService.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\StockService.cs",
-              "RelativeDocumentMoniker": "SPC\\Services\\StockService.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\StockService.cs",
-              "RelativeToolTip": "SPC\\Services\\StockService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T03:16:46.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StockDAL.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\StockDAL.cs",
-              "RelativeDocumentMoniker": "SPC\\DataAccess\\StockDAL.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\StockDAL.cs",
-              "RelativeToolTip": "SPC\\DataAccess\\StockDAL.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAmwEAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T03:14:38.448Z",
+              "WhenOpened": "2025-02-20T02:05:05.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PharmacyOrderController.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Controllers\\PharmacyOrderController.cs",
-              "RelativeDocumentMoniker": "SPC\\Controllers\\PharmacyOrderController.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Controllers\\PharmacyOrderController.cs",
-              "RelativeToolTip": "SPC\\Controllers\\PharmacyOrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAJAAAA",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SPC\\Services\\UserService.cs",
+              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\UserService.cs",
+              "RelativeToolTip": "SPC\\Services\\UserService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:54:33.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PharmacyOrderService.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\PharmacyOrderService.cs",
-              "RelativeDocumentMoniker": "SPC\\Services\\PharmacyOrderService.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\PharmacyOrderService.cs",
-              "RelativeToolTip": "SPC\\Services\\PharmacyOrderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAACaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:52:23.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PharmacyOrderDAL.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\PharmacyOrderDAL.cs",
-              "RelativeDocumentMoniker": "SPC\\DataAccess\\PharmacyOrderDAL.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\PharmacyOrderDAL.cs",
-              "RelativeToolTip": "SPC\\DataAccess\\PharmacyOrderDAL.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAmwJcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:41:27.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PharmacyOrder.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Models\\PharmacyOrder.cs",
-              "RelativeDocumentMoniker": "SPC\\Models\\PharmacyOrder.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Models\\PharmacyOrder.cs",
-              "RelativeToolTip": "SPC\\Models\\PharmacyOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:41:10.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T02:04:41.753Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StockController.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Controllers\\StockController.cs",
-              "RelativeDocumentMoniker": "SPC\\Controllers\\StockController.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Controllers\\StockController.cs",
-              "RelativeToolTip": "SPC\\Controllers\\StockController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAJAAAA",
+              "Title": "UserDAL.cs",
+              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\UserDAL.cs",
+              "RelativeDocumentMoniker": "SPC\\DataAccess\\UserDAL.cs",
+              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\UserDAL.cs",
+              "RelativeToolTip": "SPC\\DataAccess\\UserDAL.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAmwLUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:09:33.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T02:04:28.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SupplierOrderService.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\SupplierOrderService.cs",
-              "RelativeDocumentMoniker": "SPC\\Services\\SupplierOrderService.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Services\\SupplierOrderService.cs",
-              "RelativeToolTip": "SPC\\Services\\SupplierOrderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SPC\\Models\\User.cs",
+              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Models\\User.cs",
+              "RelativeToolTip": "SPC\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:09:25.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SupplierOrderDAL.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\SupplierOrderDAL.cs",
-              "RelativeDocumentMoniker": "SPC\\DataAccess\\SupplierOrderDAL.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\DataAccess\\SupplierOrderDAL.cs",
-              "RelativeToolTip": "SPC\\DataAccess\\SupplierOrderDAL.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAmwIcAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:08:53.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SupplierOrder.cs",
-              "DocumentMoniker": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Models\\SupplierOrder.cs",
-              "RelativeDocumentMoniker": "SPC\\Models\\SupplierOrder.cs",
-              "ToolTip": "E:\\Freelancing\\SPC\\backend\\SPC-System\\SPC\\Models\\SupplierOrder.cs",
-              "RelativeToolTip": "SPC\\Models\\SupplierOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T02:08:37.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T02:03:12.871Z"
             }
           ]
         }
